@@ -5,10 +5,71 @@
     background-position: right 0;
     background-position: bottom 0;
     background-size: 80%;
+    margin-top: 80px;
     & .cta {
-        padding-top: 80px;
         width: 100%;
         max-width: 1280px;
         margin: 0 auto;
+        & .cta__title {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 36px;
+            margin-bottom: 80px;
+            font-family: Oswald;
+            & img {
+                margin-right: 10px;
+            }
+        }
+        & .cta__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            margin-top: 135px;
+            & .cta__form-title {
+                text-align: center;
+                font-weight: 400;
+                font-family: Oswald;
+                font-size: 24px;
+                margin-bottom: 50px;
+            }
+            & input {
+                border-radius: 8px;
+                height: 55px;
+                border: none;
+                margin-bottom: 40px;
+                &::placeholder {
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-family: Oswald;
+                }
+            }
+            & .cta__form-btn {
+                border-radius: 8px;
+                color: black;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 400;
+                font-family: Oswald;
+                border: none;
+                height: 55px;
+                background: #E7A334;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & img {}
+            }
+            & .cta__form-small-text {
+                color: #171717;
+                font-weight: 100;
+                font-family: Oswald;
+                text-align: center;
+                font-size: 13px;
+                margin-top: 40px;
+            }
+        }
     }
 }
