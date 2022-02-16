@@ -1,0 +1,14 @@
+.cta__wrapper {
+    background: url(../../assets/img/ctabg.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-position: bottom 0;
+    background-size: 80%;
+    & .cta {
+        padding-top: 80px;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
