@@ -35,6 +35,12 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            background: rgba(#E7A334, 0.25);
+            box-sizing: border-box;
+            padding: 20px;
+            & .reviews__card-img {
+                margin-right: 20px;
+            }
         }
     }
 }

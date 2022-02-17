@@ -16,7 +16,7 @@ export class ReviewsComponent implements OnInit {
   }
   config: SwiperOptions = {
     slidesPerView: 2,
-    spaceBetween: 0,
+    spaceBetween: 50,
     navigation: true,
     pagination: { clickable: true },
     scrollbar: { draggable: true },
