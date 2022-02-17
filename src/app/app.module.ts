@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CtaComponent } from './cta/cta.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
