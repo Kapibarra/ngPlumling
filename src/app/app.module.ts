@@ -11,6 +11,7 @@ import { CtaComponent } from './cta/cta.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SwiperModule } from 'swiper/angular';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SwiperModule } from 'swiper/angular';
     PortfolioComponent,
     CtaComponent,
     AdvantagesComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
