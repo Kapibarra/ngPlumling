@@ -28,12 +28,22 @@
             align-items: center;
             text-align: center;
             Padding: 20px;
+            margin: 0 auto;
+            margin-bottom: 10px;
             & .advantages__card-title {
                 font-family: Oswald;
                 font-weight: bold;
                 font-size: 16px;
                 color: #3f464e;
                 text-transform: uppercase;
+                margin-top: 10px;
+            }
+            & .advantages__card-subtitle {
+                color: #798797;
+                font-family: Oswald;
+                font-weight: 400;
+                font-size: 14px;
+                margin-top: 10px;
             }
         }
     }
