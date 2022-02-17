@@ -9,6 +9,7 @@ import { ServiceComponent } from './service/service.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CtaComponent } from './cta/cta.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AdvantagesComponent } from './advantages/advantages.component';
     ServiceComponent,
     PortfolioComponent,
     CtaComponent,
-    AdvantagesComponent
+    AdvantagesComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
