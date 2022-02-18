@@ -26,11 +26,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 20px;
+        box-sizing: border-box;
+        padding: 30px;
         & .portfolio__card-images {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             gap: 10px;
+            & img {
+                max-width: 310px !important;
+                width: 100%;
+            }
         }
         & .portfolio__card-description {
             width: 100%;
