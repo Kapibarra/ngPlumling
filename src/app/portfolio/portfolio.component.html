@@ -3,26 +3,97 @@
         <h2 class="portfolio__title">
             <img src="../../assets/icons/title_icon.png">Наши работы
         </h2>
-        <div class="portfolio__card">
-            <div class="portfolio__card-images">
-                <img src="../../assets/img/portfolio1.png">
-                <img src="../../assets/img/portfolio2.png">
-            </div>
-            <div class="portfolio__card-description">
-                <h3 class="description__title">Отопление + водоснабжение</h3>
-                <ul>
-                    <li>Сантехнические работы (Установка сантехники в офисах и домах, монтаж сантехнического оборудования - раковины, ванны, унитазы, монтаж доп оборудования)</li>
-                    <li>от 5000 ₽/м²</li>
-                </ul>
-                <div class="description__total-price"><img src="../../assets/icons/price_icon.png">
-                    <p>Стоимость работ составила: 85 000 ₽</p><br/>
-                    <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+        <swiper [config]="config">
+            <ng-template swiperSlide>
+                <div class="portfolio__card">
+                    <div class="portfolio__card-images">
+                        <img src="../../assets/img/portfolio1.png">
+                        <img src="../../assets/img/portfolio2.png">
+                    </div>
+                    <div class="portfolio__card-description">
+                        <h3 class="description__title">Отопление + водоснабжение</h3>
+                        <ul>
+                            <li>Подключены«из стены» 3 радиатора Rifar;</li>
+                            <li>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</li>
+                            <li>Установлена сантехника.</li>
+                        </ul>
+                        <div class="description__total-price"><img src="../../assets/icons/price_icon.png">
+                            <div class="price__desc-text">
+                                <p>Стоимость работ составила: 85 000 ₽</p><br/>
+                                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="description__total-time"><img src="../../assets/icons/time_icon.png">
+                            <div class="time__desc-text">
+                                <p>Срок выезда на объект и составления сметы: 2 дня</p><br/>
+                                <p>Срок выполнения работ: 2 дня</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="description__total-time"><img src="../../assets/icons/time_icon.png">
-                    <p>Срок выезда на объект и составления сметы: 2 дня</p><br/>
-                    <p>Срок выполнения работ: 2 дня</p>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="portfolio__card">
+                    <div class="portfolio__card-images">
+                        <img src="../../assets/img/portfolio1.png">
+                        <img src="../../assets/img/portfolio2.png">
+                    </div>
+                    <div class="portfolio__card-description">
+                        <h3 class="description__title">Отопление + водоснабжение</h3>
+                        <ul>
+                            <li>Подключены«из стены» 3 радиатора Rifar;</li>
+                            <li>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</li>
+                            <li>Установлена сантехника.</li>
+                        </ul>
+                        <div class="description__total-price"><img src="../../assets/icons/price_icon.png">
+                            <div class="price__desc-text">
+                                <p>Стоимость работ составила: 85 000 ₽</p><br/>
+                                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="description__total-time"><img src="../../assets/icons/time_icon.png">
+                            <div class="time__desc-text">
+                                <p>Срок выезда на объект и составления сметы: 2 дня</p><br/>
+                                <p>Срок выполнения работ: 2 дня</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="portfolio__card">
+                    <div class="portfolio__card-images">
+                        <img src="../../assets/img/portfolio1.png">
+                        <img src="../../assets/img/portfolio2.png">
+                    </div>
+                    <div class="portfolio__card-description">
+                        <h3 class="description__title">Отопление + водоснабжение</h3>
+                        <ul>
+                            <li>Подключены«из стены» 3 радиатора Rifar;</li>
+                            <li>Смонтированы выводы для стиральной машины, раковины, ванны и кухни;</li>
+                            <li>Установлена сантехника.</li>
+                        </ul>
+                        <div class="description__total-price"><img src="../../assets/icons/price_icon.png">
+                            <div class="price__desc-text">
+                                <p>Стоимость работ составила: 85 000 ₽</p><br/>
+                                <p>Стоимость материалов и радиаторов: 150 000 ₽</p>
+                            </div>
+
+                        </div>
+                        <div class="description__total-time"><img src="../../assets/icons/time_icon.png">
+                            <div class="time__desc-text">
+                                <p>Срок выезда на объект и составления сметы: 2 дня</p><br/>
+                                <p>Срок выполнения работ: 2 дня</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
     </div>
 </div>

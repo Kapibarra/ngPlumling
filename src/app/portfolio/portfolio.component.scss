@@ -1,3 +1,9 @@
+:host::ng-deep {
+    @import 'swiper/scss';
+    @import 'swiper/scss/navigation';
+    @import 'swiper/scss/pagination';
+}
+
 .portfolio {
     padding-top: 80px;
     width: 100%;
@@ -29,6 +35,42 @@
         & .portfolio__card-description {
             width: 100%;
             max-width: 500px;
+            & .description__title {
+                font-size: 30px;
+                font-family: Nunito;
+            }
+            & ul {
+                list-style: none;
+                padding-inline-start: 0px;
+                padding-bottom: 50px;
+                margin-top: 40px;
+                border-bottom: 5px solid rgba($color: #E7A334, $alpha: 1);
+                border-width: 50%;
+                & li {
+                    margin-bottom: 25px;
+                }
+            }
+            & .description__total-price {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                & img {
+                    margin-right: 15px;
+                }
+            }
+            & .description__total-time {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 20px;
+                & img {
+                    margin-right: 15px;
+                }
+            }
         }
     }
 }
