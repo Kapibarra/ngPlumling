@@ -4,6 +4,10 @@
     @import 'swiper/scss/pagination';
 }
 
+.swiper-pagination-bullet-active {
+    background: #E7A334 !important;
+}
+
 .portfolio {
     padding-top: 80px;
     width: 100%;

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Navigation, SwiperOptions } from 'swiper';
+import SwiperCore, { Navigation, SwiperOptions, Pagination } from 'swiper';
 
 SwiperCore.use([Navigation]);
+SwiperCore.use([Pagination]);
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -17,7 +19,8 @@ export class PortfolioComponent implements OnInit {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: true,
-    pagination: { clickable: true },
+    pagination: true,
+   
     scrollbar: { draggable: true },
   };
 }
