@@ -12,6 +12,7 @@ import { AdvantagesComponent } from './advantages/advantages.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SwiperModule } from 'swiper/angular';
 import { ContactsComponent } from './contacts/contacts.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     CtaComponent,
     AdvantagesComponent,
     ReviewsComponent,
-    ContactsComponent
+    ContactsComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,
