@@ -3,18 +3,29 @@
         <img src="../../assets/icons/title_icon.png">Контакты
     </h2>
     <div class="contacts__card-wrapper">
-        <div class="contacts__card">
+        <div class="contacts__card-small">
             <img src="../../assets/icons/phone.png">
-            <h4 class="contacts__title">Позвоните по номеру:</h4>
+            <h4 class="contacts__card-title">Позвоните по номеру:</h4>
             <a class="contacts__subtitle">8 (495) 999 99 99</a>
         </div>
-        <div class="contacts__card">
+        <div class="contacts__card-small">
             <img src="../../assets/icons/mail.png">
-            <h4 class="contacts__title">Или напишите нам на почту:</h4>
-            <a class="contacts__subtitle">info@electromo.com</a>
+            <h4 class="contacts__card-title">Или напишите нам на почту:</h4>
+            <a class="contacts__subtitle highlighted">info@electromo.com</a>
         </div>
-        <div class="contacts__card">
-
+        <div class="contacts__card-big">
+            <form class="contacts__form" method="POST">
+                <input placeholder="Введите Имя" />
+                <input placeholder="Введите Телефон" />
+                <select>
+                    <option>Электромонтажные работы</option>
+                    <option>Сантехнические работы</option>
+                    <option>Другое</option>
+                </select>
+                <input placeholder="Размер помещений" />
+                <button type="submit" class="form__button">Отправить</button>
+                <p class="smalltext">Гарантируем конфидициальность и целевое использование данных</p>
+            </form>
         </div>
     </div>
 </div>
