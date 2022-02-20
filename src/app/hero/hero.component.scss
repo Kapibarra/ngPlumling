@@ -61,3 +61,15 @@
         border: 3px solid #E7A334;
     }
 }
+
+@media screen and (max-width:968px) {
+    .hero-wrapper {
+        height: unset;
+        background-position-x: 20%;
+    }
+    .hero {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

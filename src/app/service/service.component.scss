@@ -67,3 +67,21 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .service__wrapper {
+        height: unset;
+    }
+    .service {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .service__card-wrapper {
+        flex-direction: column !important;
+        align-items: center;
+        & .service__card {
+            margin-bottom: 20px;
+        }
+    }
+}
