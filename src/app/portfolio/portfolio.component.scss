@@ -84,3 +84,10 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .portfolio {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+}

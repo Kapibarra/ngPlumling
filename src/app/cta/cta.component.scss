@@ -73,3 +73,20 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .cta__wrapper {
+        background: unset;
+    }
+    .cta {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .cta__form {
+        box-sizing: border-box;
+        padding: 20px;
+        background: #F8F8F8;
+        border-radius: 8px;
+        border: 6px solid rgba(#E7A33455, 0.3);
+    }
+}
