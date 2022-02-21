@@ -11,10 +11,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 10px;
-        & .header__logo {
+        & .header__logo a {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            text-decoration: none;
             & .header__logo-text {
                 font-family: 'Oswald', sans-serif;
                 width: 100%;

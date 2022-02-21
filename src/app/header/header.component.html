@@ -2,26 +2,28 @@
     <div class="header">
         <div class="header__top-bar">
             <div class="header__logo">
-                <div class="header__logo-item"><img class="header__logo-item" src="../../assets/img/logomain.svg"></div>
-                <div class="header__logo-text">ЭЛЕКТРОМОНТАЖНЫЕ И САНТЕХНИЧЕСКИЕ РАБОТЫ</div>
+                <a [routerLink]="['/']">
+                    <div class="header__logo-item"><img class="header__logo-item" src="../../assets/img/logomain.svg"></div>
+                    <div class="header__logo-text">ЭЛЕКТРОМОНТАЖНЫЕ И САНТЕХНИЧЕСКИЕ РАБОТЫ</div>
+                </a>
             </div>
             <div class="header__contacts">
                 <div class="header__contacts-logo"><img class="header__contacts-logo" src="../../assets/icons/logo_whatsapp.png"></div>
                 <div class="header__contacts-text">
                     <span class="highlighted" style="font-family:'Oswald', sans-serif; font-size: 28px;">Звоните!</span>
                     <p style="font-family:'Oswald', sans-serif; font-size: 18px;">Ежедневно с <span class="highlighted">9:00 - 20:00</span></p>
-                    <p style="font-family:'Oswald', sans-serif; font-size: 28px;">+ 7 <span class="highlighted">(</span>999<span class="highlighted">)</span> 999 99 99</p>
+                    <a style="font-family:'Oswald', sans-serif; font-size: 28px;text-decoration: none;" href="tel:+79663270432">+ 7 <span class="highlighted">(</span>966<span class="highlighted">)</span> 327 04 32</a>
                 </div>
             </div>
         </div>
         <div class="header__btm-bar">
             <ul class="header__nav">
-                <li class="header__nav-item"><a>Главная</a></li>
-                <li class="header__nav-item"><a>Наши услуги</a></li>
-                <li class="header__nav-item"><a>Наши работы</a></li>
-                <li class="header__nav-item"><a>Наши преимущества</a></li>
-                <li class="header__nav-item"><a>Отзывы</a></li>
-                <li class="header__nav-item"><a>Контакты</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('')">Главная</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('services')">Наши услуги</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('portfolio')">Наши работы</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('advantages')">Наши преимущества</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('reviews')">Отзывы</a></li>
+                <li class="header__nav-item"><a (click)="onClickScroll('contacts')">Контакты</a></li>
             </ul>
         </div>
     </div>
