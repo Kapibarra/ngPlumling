@@ -2,9 +2,12 @@ $burgerWidth: 24px;
 $burgerBarHeight: 1px;
 $burgerBarColor: #F74902;
 .burger-menu {
-    width: $burgerWidth;
+    width: 100%;
+    max-width: 280px;
     height: $burgerWidth;
     margin-right: 20px;
+    box-sizing: border-box;
+    display: flex;
     cursor: pointer;
     .burger-container {
         position: relative;
@@ -65,6 +68,14 @@ $burgerBarColor: #F74902;
             opacity: 0;
         }
     }
+}
+
+.burger-menu-btn {
+    color: #fff;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .burger-menu.active {

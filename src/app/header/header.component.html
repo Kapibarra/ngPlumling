@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="header__btm-bar">
-            <ul class="header__nav">
+            <ul class="header__nav" *ngIf="!mobile">
                 <li class="header__nav-item"><a (click)="onClickScroll('')">Главная</a></li>
                 <li class="header__nav-item"><a (click)="onClickScroll('services')">Наши услуги</a></li>
                 <li class="header__nav-item"><a (click)="onClickScroll('portfolio')">Наши работы</a></li>
@@ -25,6 +25,7 @@
                 <li class="header__nav-item"><a (click)="onClickScroll('reviews')">Отзывы</a></li>
                 <li class="header__nav-item"><a (click)="onClickScroll('contacts')">Контакты</a></li>
             </ul>
+            <app-burger *ngIf="mobile"></app-burger>
         </div>
     </div>
 </div>

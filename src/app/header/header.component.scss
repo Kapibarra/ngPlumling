@@ -65,3 +65,13 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .header__btm-bar {
+        box-sizing: border-box;
+        padding: 20px;
+        max-width: 150px !important;
+        display: flex;
+    }
+    .header__contacts-mobile {}
+}
