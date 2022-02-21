@@ -36,6 +36,8 @@
                 font-weight: bold;
                 font-size: 24px;
                 font-family: Nunito;
+                text-decoration: none;
+                color: #24242e;
             }
         }
         & .contacts__card-big {
@@ -106,6 +108,16 @@
                     margin-bottom: 10px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:968px) {
+    .contacts__card-wrapper {
+        flex-direction: column !important;
+        align-items: center;
+        .contacts__card-small {
+            margin-bottom: 15px;
         }
     }
 }
