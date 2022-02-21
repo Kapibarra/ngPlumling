@@ -13,6 +13,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { SwiperModule } from 'swiper/angular';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { BurgerComponent } from './burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CopyrightComponent } from './copyright/copyright.component';
     AdvantagesComponent,
     ReviewsComponent,
     ContactsComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,

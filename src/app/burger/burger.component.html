@@ -1,0 +1,20 @@
+<div class="burger-menu wow animate__animated animate__fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s" [class.active]="active" (click)="onBurgerClicked()">
+    <div class="burger-container">
+        <div class="burger-inner"></div>
+    </div>
+    <div class="overlay">
+        <div class="burger__nav-contacts">
+            <a href="tel:+79017111769" class="burger__nav-phone">+7 (901) 711 17 69</a>
+            <a href="mailto:info@fitserv.ru" class="burger__nav-mail">info@fitserv.ru</a>
+        </div>
+        <ul class="burger__nav">
+            <li class="burger__nav-item">
+                <a (click)="onClickScroll('about')"> <span class="nav__item-inner">О нас</span></a>
+            </li>
+            <li class="burger__nav-item"><a (click)="onClickScroll('services')"><span class="nav__item-inner">Услуги</span></a></li>
+            <li class="burger__nav-item"><a (click)="onClickScroll('gallery')"><span class="nav__item-inner">Галерея</span></a></li>
+            <li class="burger__nav-item"><a (click)="onClickScroll('footer')"><span class="nav__item-inner">Контакты</span></a></li>
+        </ul>
+        <div class="burger__logo"><img src="../../../assets/img/logo.svg"></div>
+    </div>
+</div>
