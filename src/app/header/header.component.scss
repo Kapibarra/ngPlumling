@@ -75,3 +75,11 @@
     }
     .header__contacts-mobile {}
 }
+
+@media screen and (max-width:428px) {
+    .header {
+        & .header__top-bar {
+            justify-content: center !important;
+        }
+    }
+}

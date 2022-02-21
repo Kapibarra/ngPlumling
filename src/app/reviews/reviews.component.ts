@@ -21,4 +21,5 @@ mobile = false;
     pagination: { clickable: true },
     scrollbar: { draggable: true },
   };
+  
 }

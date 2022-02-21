@@ -73,3 +73,12 @@
         padding-right: 10px;
     }
 }
+
+@media screen and (max-width:428px) {
+    .hero-wrapper {
+        margin-top: -280px !important;
+    }
+    .hero__title {
+        font-size: 30px !important;
+    }
+}

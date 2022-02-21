@@ -91,3 +91,9 @@
         padding: 10px;
     }
 }
+
+@media screen and (max-width:428px) {
+    .portfolio__card-images {
+        flex-direction: column !important;
+    }
+}

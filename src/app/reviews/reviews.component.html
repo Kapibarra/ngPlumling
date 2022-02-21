@@ -3,7 +3,20 @@
         <img src="../../assets/icons/title_icon.png">Отзывы клиентов
     </h2>
     <div class="reviews__card-wrapper">
-        <swiper [config]="config" [pagination]="false">
+        <swiper [config]="config" [pagination]="false" [breakpoints]="{
+            '320': {
+              slidesPerView: 1,
+              spaceBetween: 0
+            },
+            '768': {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            '1024': {
+              slidesPerView: 2,
+              spaceBetween: 50
+            }
+          }">
             <ng-template swiperSlide>
                 <div class="reviews__card">
                     <div class="reviews__card-img"><img class="reviews__card-img" src="../../assets/img/reviewsdefault.png"></div>
