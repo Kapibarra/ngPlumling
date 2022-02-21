@@ -51,3 +51,25 @@
         }
     }
 }
+
+@media screen and (max-width:968px) {
+    .reviews {
+        box-sizing: border-box;
+        padding: 10px;
+        padding-top: 50px;
+    }
+    .reviews__card {
+        flex-direction: column !important;
+        align-items: center;
+        min-height: 360px !important;
+        & .reviews__card-description {
+            & .reviews__card-title {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            & .reviews__card-subtitle {
+                text-align: justify;
+            }
+        }
+    }
+}

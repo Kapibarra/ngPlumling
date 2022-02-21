@@ -9,7 +9,7 @@ SwiperCore.use([Navigation]);
   styleUrls: ['./reviews.component.scss']
 })
 export class ReviewsComponent implements OnInit {
-
+mobile = false;
   constructor() { }
 
   ngOnInit(): void {
