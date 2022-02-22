@@ -14,9 +14,14 @@ mail!: Mail;
   ngOnInit(): void {
   }
 onSubmit(formValue: any) {
+  const formData = new FormData(formValue);
+  
   console.log(formValue);
+  console.log(formData);
+  
   this.http.post('/assets/handler.php', formValue).subscribe((responce: any) => {
-console.log(responce);
+  
+  console.log(responce);
 
   })
 }
