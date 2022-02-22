@@ -36,6 +36,16 @@
                 & p {
                     margin: 0;
                 }
+                & a {
+                    color: #fff !important;
+                    transition: all 0.25s ease-in-out;
+                }
+                & a:hover {
+                    cursor: pointer;
+                    transition: all 0.25s ease-in-out;
+                    color: #E7A334 !important;
+                    text-shadow: 0px 0px 2px #E7A334;
+                }
             }
         }
     }
@@ -58,9 +68,13 @@
             & li a {
                 color: #F4F4F4;
                 text-decoration: none;
+                transition: all 0.25s ease-in-out;
             }
             & li a:hover {
                 cursor: pointer;
+                color: #E7A334;
+                transition: all 0.25s ease-in-out;
+                text-shadow: 0px 0px 2px #E7A334;
             }
         }
     }
