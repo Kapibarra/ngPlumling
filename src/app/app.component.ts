@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgwWowService } from 'ngx-wow';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Электромонтажные и сантехнические услуги';
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
+  ngOnInit(): void {}
 }
