@@ -14,6 +14,9 @@ import { SwiperModule } from 'swiper/angular';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { BurgerComponent } from './burger/burger.component';
+import { FormsModule } from '@angular/forms';
+import { FormComponent } from './form/form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,13 +30,16 @@ import { BurgerComponent } from './burger/burger.component';
     ReviewsComponent,
     ContactsComponent,
     CopyrightComponent,
-    BurgerComponent
+    BurgerComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     SwiperModule,
     NgwWowModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

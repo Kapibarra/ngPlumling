@@ -1,0 +1,61 @@
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    & input {
+        margin-top: 15px;
+        color: #24242e;
+        background: rgba(#E7A33455, 0.3);
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 400;
+        &::placeholder {
+            text-align: center;
+            color: #24242e;
+            font-family: Nunito;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    & select {
+        margin-top: 15px;
+        color: #24242e;
+        background: rgba(#E7A33455, 0.3);
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 400;
+        & option {
+            text-align: center;
+            color: #24242e;
+            font-family: Nunito;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    & .form__button {
+        margin-top: 15px;
+        color: #24242e;
+        background: rgba(#E7A33455, 1);
+        height: 50px;
+        border-radius: 8px;
+        border: none;
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    & .smalltext {
+        font-family: Oswald;
+        font-weight: 100;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}

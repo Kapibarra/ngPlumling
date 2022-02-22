@@ -1,0 +1,12 @@
+<form class="contacts__form" (ngSubmit)="onSubmit(formValue.value)" novalidate #formValue="ngForm">
+    <input placeholder="Введите Имя" ngModel name="name" />
+    <input placeholder="Введите Телефон" ngModel name="phone" />
+    <select ngModel name="service">
+        <option>Электромонтажные работы</option>
+        <option>Сантехнические работы</option>
+        <option>Другое</option>
+    </select>
+    <input placeholder="Размер помещений" ngModel name="square" />
+    <button type="submit" class="form__button">Отправить</button>
+    <p class="smalltext">Гарантируем конфидициальность и целевое использование данных</p>
+</form>
