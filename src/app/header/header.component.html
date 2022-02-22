@@ -3,13 +3,13 @@
         <div class="header__top-bar">
             <div class="header__logo">
                 <a [routerLink]="['/']">
-                    <div class="header__logo-item"><img class="header__logo-item" src="../../assets/img/logomain.svg"></div>
-                    <div class="header__logo-text">ЭЛЕКТРОМОНТАЖНЫЕ И САНТЕХНИЧЕСКИЕ РАБОТЫ</div>
+                    <div class="header__logo-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.3s"><img class="header__logo-item" src="../../assets/img/logomain.svg"></div>
+                    <div class="header__logo-text wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">ЭЛЕКТРОМОНТАЖНЫЕ И САНТЕХНИЧЕСКИЕ РАБОТЫ</div>
                 </a>
             </div>
             <div class="header__contacts">
-                <a class="header__contacts-logo" href="https://wa.me/79663270432"><img class="header__contacts-logo" src="../../assets/icons/logo_whatsapp.png"></a>
-                <div class="header__contacts-text">
+                <a class="header__contacts-logo wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" href="https://wa.me/79663270432"><img class="header__contacts-logo" src="../../assets/icons/logo_whatsapp.png"></a>
+                <div class="header__contacts-text wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                     <span class="highlighted" style="font-family:'Oswald', sans-serif; font-size: 28px;">Звоните!</span>
                     <p style="font-family:'Oswald', sans-serif; font-size: 18px;">Ежедневно с <span class="highlighted">9:00 - 20:00</span></p>
                     <a style="font-family:'Oswald', sans-serif; font-size: 28px; text-decoration: none;" href="tel:+79663270432">+ 7 <span class="highlighted">(</span>966<span class="highlighted">)</span> 327 04 32</a>
@@ -18,12 +18,12 @@
         </div>
         <div class="header__btm-bar">
             <ul class="header__nav" *ngIf="!mobile">
-                <li class="header__nav-item"><a (click)="onClickScroll('')">Главная</a></li>
-                <li class="header__nav-item"><a (click)="onClickScroll('services')">Наши услуги</a></li>
-                <li class="header__nav-item"><a (click)="onClickScroll('portfolio')">Наши работы</a></li>
-                <li class="header__nav-item"><a (click)="onClickScroll('advantages')">Наши преимущества</a></li>
-                <li class="header__nav-item"><a (click)="onClickScroll('reviews')">Отзывы</a></li>
-                <li class="header__nav-item"><a (click)="onClickScroll('contacts')">Контакты</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.3s"><a (click)="onClickScroll('')">Главная</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"><a (click)="onClickScroll('services')">Наши услуги</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s"><a (click)="onClickScroll('portfolio')">Наши работы</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.6s"><a (click)="onClickScroll('advantages')">Наши преимущества</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.7s"><a (click)="onClickScroll('reviews')">Отзывы</a></li>
+                <li class="header__nav-item wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"><a (click)="onClickScroll('contacts')">Контакты</a></li>
             </ul>
             <app-burger *ngIf="mobile"></app-burger>
         </div>
