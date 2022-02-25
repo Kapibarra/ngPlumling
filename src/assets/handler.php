@@ -10,12 +10,14 @@ require 'php/PHPMailer-5.2.28/src/SMTP.php';
 $mail = new PHPMailer(true);
 $mail_subject = 'Заявка с сайта';
 $mail_to_email = 'ga1ned12@yandex.ru'; // your email
-$mail_to_name = 'Fitserv.ru';
+$mail_to_name = 'Electro-hand.ru';
 
 try {
 
 	$mail_from_name = isset( $_POST['name'] ) ? $_POST['name'] : '';
 	$mail_from_phone = isset( $_POST['phone'] ) ? $_POST['phone'] : '';
+	$mail_from_service = isset( $_POST['service'] ) ? $_POST['service'] : '';
+	$mail_from_square = isset( $_POST['square'] ) ? $_POST['square'] : '';
 	
 	
 
@@ -42,7 +44,10 @@ try {
 	$mail->Body = '
 		
 		<strong>Phone:</strong> ' . $mail_from_phone . '<br>
+		<strong>Service:</strong> ' . $mail_from_service . '<br>
+		<strong>Square:</strong> ' . $mail_from_square . '<br>
 		<strong>Name:</strong> ' . $mail_from_name; 
+		
 	$mail->Send();
 
 	echo '<script>
