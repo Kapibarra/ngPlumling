@@ -3,12 +3,12 @@
         <h2 class="cta__title">
             <img src="../../assets/icons/title_icon.png">Быстрая заявка
         </h2>
-        <div class="cta__form">
+        <form class="cta__form" (ngSubmit)="onSubmit(formValue.value)" novalidate #formValue="ngForm">
             <h3 class="cta__form-title">Наши специалисты перезвонят Вам за 30 минут!</h3>
             <input placeholder="Имя" />
             <input placeholder="Телефон" />
             <button type="submit" class="cta__form-btn">Отправить<img src="../../assets/icons/sendbtn_icon.png"></button>
             <p class="cta__form-small-text">Гарантируем конфидициальность и целевое использование данных</p>
-        </div>
+        </form>
     </div>
 </div>

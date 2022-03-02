@@ -49,6 +49,16 @@
         font-family: Nunito;
         font-size: 18px;
         font-weight: 400;
+        transition: all 100ms ease-in-out;
+    }
+    & .form__button:hover {
+        cursor: pointer !important;
+    }
+    & .form__button:active {
+        cursor: pointer !important;
+        transition: all 100ms ease-in-out;
+        background: rgba(#E7A33455, 0.3);
+        border: 1px solid #E7A334;
     }
     & .smalltext {
         font-family: Oswald;
