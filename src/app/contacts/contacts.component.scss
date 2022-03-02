@@ -98,6 +98,9 @@
                     font-family: Nunito;
                     font-size: 18px;
                     font-weight: 400;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
                 & .smalltext {
                     font-family: Oswald;
