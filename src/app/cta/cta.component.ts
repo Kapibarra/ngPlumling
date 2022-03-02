@@ -18,7 +18,7 @@ export class CtaComponent implements OnInit {
       formData.append(key, formValue[key]);
     }
     this.http
-      .post('/assets/handler.php', formData)
+      .post('/assets/handlerMini.php', formData)
       .subscribe((responce: any) => {
         console.log(responce);
       });
