@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { Mail } from './form';
 
 @Component({
@@ -13,6 +13,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {}
   onSubmit(formValue: any) {
+
     var formData = new FormData();
     for (var key in formValue) {
       formData.append(key, formValue[key]);
@@ -22,5 +23,16 @@ export class FormComponent implements OnInit {
       .subscribe((responce: any) => {
         console.log(responce);
       });
+
+    const popUp = document.getElementById('popUp');
+    console.log(popUp);
+    setTimeout(() => {
+      popUp?.classList.add('popUpVisible')
+    }, 2000);
+    setTimeout(() => {
+      document.getElementById('popUp')?.classList.remove('popUpVisible')
+    }, 6000);
   }
+
+  
 }
