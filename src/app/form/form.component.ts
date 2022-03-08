@@ -21,11 +21,9 @@ export class FormComponent implements OnInit {
     this.http
       .post('/assets/handler.php', formData)
       .subscribe((responce: any) => {
-        console.log(responce);
       });
 
     const popUp = document.getElementById('popUp');
-    console.log(popUp);
     setTimeout(() => {
       popUp?.classList.add('popUpVisible')
     }, 1000);
