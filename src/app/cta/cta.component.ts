@@ -22,5 +22,13 @@ export class CtaComponent implements OnInit {
       .subscribe((responce: any) => {
         console.log(responce);
       });
+      const popUp = document.getElementById('popUp');
+      console.log(popUp);
+      setTimeout(() => {
+        popUp?.classList.add('popUpVisible')
+      }, 1000);
+      setTimeout(() => {
+        document.getElementById('popUp')?.classList.remove('popUpVisible')
+      }, 4000);  
   }
 }

@@ -28,10 +28,10 @@ export class FormComponent implements OnInit {
     console.log(popUp);
     setTimeout(() => {
       popUp?.classList.add('popUpVisible')
-    }, 2000);
+    }, 1000);
     setTimeout(() => {
       document.getElementById('popUp')?.classList.remove('popUpVisible')
-    }, 6000);
+    }, 4000);
   }
 
   

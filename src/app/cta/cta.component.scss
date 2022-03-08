@@ -61,6 +61,15 @@
                 align-items: center;
                 justify-content: center;
                 & img {}
+                &:hover {
+                    cursor: pointer;
+                }
+                &:active {
+                    cursor: pointer !important;
+                    transition: all 100ms ease-in-out;
+                    background: rgba(#E7A33455, 0.3);
+                    border: 1px solid #E7A334;
+                }
             }
             & .cta__form-small-text {
                 color: #171717;
